@@ -1,0 +1,10 @@
+.home {
+  padding-top: 5rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-textbox {
+  padding-bottom: 5rem;
+}
