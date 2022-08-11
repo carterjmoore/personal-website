@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.about {
+  height: 100vh;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.bg {
+  background-color: red;
+}
