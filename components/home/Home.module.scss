@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.home {
+  padding-top: 5rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-textbox {
+  padding-bottom: 5rem;
+}
+
+.hi {
+  color: aqua;
+  margin-bottom: 0.75rem;
+}
+
+.carter,
+.subheader {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.carter {
+  color: $shade100;
+  margin-bottom: 0.75rem;
+}
+
+.subheader {
+  color: $shade200;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  color: $shade300;
+  max-width: 30rem;
+  line-height: 1.5rem;
+}
