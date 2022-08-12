@@ -8,10 +8,18 @@
 
   em {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   ul {
     list-style-position: inside;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  ul li:last-child {
+    margin-bottom: 0;
   }
 }
