@@ -36,11 +36,9 @@ const About = () => {
           <div className={classes.image}>
             <Image
               src="/me.jpg"
-              width={1224}
-              height={816}
+              width="1224px"
+              height="816px"
               alt="Image Of Carter"
-              objectFit="cover"
-              objectPosition="75% 50%"
             ></Image>
           </div>
         </div>
