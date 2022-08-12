@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.select-button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.selected,
+.select-button:hover {
+  cursor: pointer;
+  background-color: lighten($color: $dark, $amount: 5%);
+  color: $highlight;
+}

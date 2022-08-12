@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.work {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 20rem;
+  color: $shade300;
+}
+
+.select {
+  border-right-width: thin;
+  border-right-color: $highlight;
+  border-right-style: solid;
+}
+
+.select-button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.selected,
+.select-button:hover {
+  cursor: pointer;
+  background-color: lighten($color: $dark, $amount: 5%);
+  color: $highlight;
+}
+
+.info {
+  flex-grow: 1;
+}

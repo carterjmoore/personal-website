@@ -4,9 +4,9 @@ import classes from './About.module.scss';
 const About = () => {
   return (
     <div className={`layout ${classes.about}`}>
-      <h1 className={`header`}>About Me</h1>
+      <h1 className={`section-header`}>About Me</h1>
       <div className={classes.columns}>
-        <div className={classes.text}>
+        <div className={`border-highlight ${classes.text}`}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi
             sem, consequat eu nunc sed, tincidunt condimentum ipsum. Suspendisse
@@ -33,7 +33,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <div className={classes.image}>
+          <div className={`shadow-highlight ${classes.image}`}>
             <Image
               src="/me.jpg"
               width="1224px"

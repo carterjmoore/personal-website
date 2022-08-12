@@ -11,11 +11,6 @@
 }
 
 .text {
-  box-shadow: 0 10px 30px -15px $highlight;
-  border-radius: $border-radius;
-  border-width: thin;
-  border-color: $highlight;
-  border-style: solid;
   padding: 1rem;
 
   p {
@@ -26,7 +21,6 @@
 }
 
 .image {
-  box-shadow: 0 10px 30px -15px $highlight;
   border-radius: $border-radius;
   overflow: hidden;
   height: 240px;
