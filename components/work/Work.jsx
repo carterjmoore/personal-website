@@ -9,14 +9,14 @@ const works = [
     company: 'Mach85',
     title: 'Junior Software Developer Co-op',
     date: 'September - December 2021',
-    bullets: ['Something', 'Something else'],
+    bullets: ['Something about Mach85', 'Something else about Mach85'],
   },
   {
     id: 1,
     company: 'Populus Global Solutions',
     title: 'Full Stack Developer Co-op',
     date: 'May - August 2022',
-    bullets: ['Something', 'Something else'],
+    bullets: ['Something about Populus', 'Something else about Populus'],
   },
 ].reverse();
 
