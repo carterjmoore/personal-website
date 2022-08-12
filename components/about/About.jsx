@@ -4,7 +4,7 @@ import classes from './About.module.scss';
 const About = () => {
   return (
     <div className={`layout ${classes.about}`}>
-      <h1 className={classes.header}>About Me</h1>
+      <h1 className={`header`}>About Me</h1>
       <div className={classes.columns}>
         <div className={classes.text}>
           <p>
