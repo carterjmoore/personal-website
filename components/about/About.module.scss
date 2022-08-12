@@ -4,12 +4,32 @@
   height: 100vh;
 }
 
+.header {
+  margin-bottom: 1rem;
+}
+
 .columns {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
 }
 
-.bg {
-  background-color: red;
+.text {
+  border-radius: $border-radius;
+  border-width: thin;
+  border-color: $highlight;
+  border-style: solid;
+  padding: 1rem;
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    color: $shade300;
+  }
+}
+
+.image {
+  border-radius: $border-radius;
+  overflow: hidden;
+  max-height: 800px;
 }
