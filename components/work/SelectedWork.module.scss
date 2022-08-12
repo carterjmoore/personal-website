@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.selected-work {
+  h3 {
+    color: $shade100;
+    margin-bottom: 0.5rem;
+  }
+
+  em {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style-position: inside;
+  }
+}

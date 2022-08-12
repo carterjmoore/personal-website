@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SelectButton from './SelectButton';
+import SelectedWork from './SelectedWork';
 import classes from './Work.module.scss';
 
 const works = [
@@ -42,7 +43,9 @@ const Work = () => {
             );
           })}
         </div>
-        <div className={classes.info}></div>
+        <div className={classes.info}>
+          <SelectedWork work={selectedWork} />
+        </div>
       </div>
     </div>
   );
