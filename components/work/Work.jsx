@@ -29,22 +29,24 @@ const Work = () => {
 
   return (
     <div className={`layout ${classes.work}`}>
-      <h1 className={`section-header`}>Work Experience</h1>
-      <div className={`border-highlight ${classes.wrapper}`}>
-        <div className={classes.select}>
-          {works.map((work) => {
-            return (
-              <SelectButton
-                work={work}
-                selectedId={selectedWork.id}
-                onClick={onWorkSelected}
-                key={work.id}
-              />
-            );
-          })}
-        </div>
-        <div className={classes.info}>
-          <SelectedWork work={selectedWork} />
+      <div className={classes.wrapper}>
+        <h1 className={`section-header`}>Work Experience</h1>
+        <div className={`border-highlight ${classes.container}`}>
+          <div className={classes.select}>
+            {works.map((work) => {
+              return (
+                <SelectButton
+                  work={work}
+                  selectedId={selectedWork.id}
+                  onClick={onWorkSelected}
+                  key={work.id}
+                />
+              );
+            })}
+          </div>
+          <div className={classes.info}>
+            <SelectedWork work={selectedWork} />
+          </div>
         </div>
       </div>
     </div>

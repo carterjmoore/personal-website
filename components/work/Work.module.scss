@@ -2,9 +2,16 @@
 
 .work {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
+  width: 100%;
+}
+
+.container {
   display: flex;
   min-height: 20rem;
   color: $shade300;

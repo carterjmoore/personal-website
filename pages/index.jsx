@@ -1,5 +1,6 @@
 import About from '../components/about/About';
 import Home from '../components/home/Home';
+import Projects from '../components/projects/Projects';
 import Work from '../components/work/Work';
 
 export default function Index() {
@@ -8,6 +9,7 @@ export default function Index() {
       <Home />
       <About />
       <Work />
+      <Projects />
     </>
   );
 }
