@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.button {
+  padding: 0.5rem;
+  background-color: transparent;
+  box-shadow: 0 10px 30px -15px $highlight;
+  border-radius: $border-radius;
+  border-width: thin;
+  border-color: $highlight;
+  border-style: solid;
+  overflow: hidden;
+  color: $shade100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color ease-in-out 200ms, color ease-in-out 200ms;
+}
+
+.button:hover,
+.button:active {
+  cursor: pointer;
+  color: $highlight;
+}
+
+.button:hover {
+  background-color: lighten($color: $dark, $amount: 5%);
+}
+
+.button:active {
+  transition: none;
+  background-color: lighten($color: $dark, $amount: 10%);
+}

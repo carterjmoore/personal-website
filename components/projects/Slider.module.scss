@@ -6,13 +6,32 @@
 .container {
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .slider {
   display: flex;
   // width: calc(100% - 2 * $slider-padding);
-  overflow: hidden;
   width: 100%;
   padding: 0 $project-slide-padding $project-slide-padding
     $project-slide-padding;
+  transition: transform ease-in-out 300ms;
+}
+
+.progress {
+  position: absolute;
+  bottom: calc($project-slide-padding + 1rem);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.progress-circle {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border-width: thin;
+  border-color: lighten($color: $dark, $amount: 5%);
+  border-style: solid;
+  transition: background-color ease-in-out 300ms;
 }
