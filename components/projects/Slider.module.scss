@@ -30,8 +30,17 @@
   border-radius: 50%;
   width: 1rem;
   height: 1rem;
-  border-width: thin;
+  border-width: 2px;
   border-color: lighten($color: $dark, $amount: 5%);
   border-style: solid;
   transition: background-color ease-in-out 300ms;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover,
+  &.selected {
+    background-color: $highlight;
+  }
 }

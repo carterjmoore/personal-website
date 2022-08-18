@@ -23,6 +23,12 @@ const Slider = () => {
     });
   };
 
+  const handleSelect = (index) => {
+    return () => {
+      setCurrentIndex(index);
+    };
+  };
+
   return (
     <div className={classes.container}>
       <div
@@ -45,12 +51,10 @@ const Slider = () => {
           return (
             <div
               key={project.name}
-              className={classes['progress-circle']}
-              style={{
-                backgroundColor: `${
-                  index === currentIndex ? 'cyan' : 'transparent'
-                }`,
-              }}
+              onClick={handleSelect(index)}
+              className={`${classes['progress-circle']} ${
+                index === currentIndex ? classes.selected : ''
+              }`}
             ></div>
           );
         })}

@@ -8,16 +8,39 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
 
-  h3 {
-    color: $shade100;
-    margin-bottom: 0.5rem;
+.top {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  margin-bottom: 1rem;
+
+  .heading {
+    h3 {
+      color: $shade100;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .image {
+    border-radius: $border-radius;
+    overflow: hidden;
   }
 }
 
 .info {
   flex-grow: 1;
   margin-bottom: 1rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .buttons {

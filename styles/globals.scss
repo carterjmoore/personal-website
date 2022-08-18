@@ -29,6 +29,18 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-position: inside;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .layout {
   margin: 3rem auto;
   width: 90%;
