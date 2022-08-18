@@ -3,7 +3,7 @@ import classes from './About.module.scss';
 
 const About = () => {
   return (
-    <div className={`layout ${classes.about}`}>
+    <div id="about" className={`layout ${classes.about}`}>
       <h1 className={`section-header`}>About Me</h1>
       <div className={classes.columns}>
         <div className={`border-highlight ${classes.text}`}>

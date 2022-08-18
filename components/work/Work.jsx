@@ -28,7 +28,7 @@ const Work = () => {
   };
 
   return (
-    <div className={`layout ${classes.work}`}>
+    <div id="work" className={`layout ${classes.work}`}>
       <div className={classes.wrapper}>
         <h1 className={`section-header`}>Work Experience</h1>
         <div className={`border-highlight ${classes.container}`}>

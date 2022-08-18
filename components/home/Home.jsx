@@ -2,7 +2,7 @@ import classes from './Home.module.scss';
 
 const Home = () => {
   return (
-    <div className={classes.home}>
+    <div id="home" className={classes.home}>
       <div className={'layout ' + classes['home-textbox']}>
         <h3 className={classes.hi}>Hi, I&apos;m</h3>
         <h1 className={classes.carter}>Carter Moore.</h1>

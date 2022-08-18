@@ -3,7 +3,7 @@ import Slider from './Slider';
 
 const Projects = () => {
   return (
-    <div className={`layout ${classes.projects}`}>
+    <div id="personal-projects" className={`layout ${classes.projects}`}>
       <div className={classes.wrapper}>
         <h1 className={`section-header ${classes.header}`}>
           Personal Projects

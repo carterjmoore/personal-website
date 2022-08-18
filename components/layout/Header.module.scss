@@ -12,34 +12,46 @@
   backdrop-filter: blur(6px);
   padding: 0 10%;
   z-index: 99;
-}
 
-.logo {
-  font-size: 2rem;
-  color: white;
-  font-weight: bold;
-}
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
 
-.header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: baseline;
-}
+  li {
+    margin-bottom: 0;
+    margin-right: 2rem;
+    transition: transform ease-in-out 150ms;
 
-.header li {
-  margin-left: 2rem;
-}
+    &:last-child {
+      margin: 0;
+    }
 
-.header a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: $light;
-}
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
 
-.header a:hover,
-.header a:active,
-.header a.active {
-  color: white;
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $shade100;
+    transition: all ease-in-out 300ms;
+
+    &:hover,
+    &:active,
+    &.active {
+      color: $highlight;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
 }
