@@ -14,8 +14,32 @@ const ProjectSlide = (props) => {
       </div>
       <div className={classes.info}></div>
       <div className={classes.buttons}>
-        <Button onClick={props.onPrev}>Prev</Button>
-        <Button onClick={props.onNext}>Next</Button>
+        <Button
+          style={{
+            fontSize: '2rem',
+            paddingTop: '0',
+            paddingLeft: '0',
+            paddingRight: '0',
+            paddingBottom: '4px',
+            width: '2rem',
+          }}
+          onClick={props.onPrev}
+        >
+          &#8249;
+        </Button>
+        <Button
+          style={{
+            fontSize: '2rem',
+            paddingTop: '0',
+            paddingLeft: '0',
+            paddingRight: '0',
+            paddingBottom: '4px',
+            width: '2rem',
+          }}
+          onClick={props.onNext}
+        >
+          &#8250;
+        </Button>
       </div>
     </div>
   );
