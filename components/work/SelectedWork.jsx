@@ -1,9 +1,13 @@
+import InlineLink from '../ui/InlineLink';
 import classes from './SelectedWork.module.scss';
 
 const SelectedWork = (props) => {
   return (
     <div className={classes['selected-work']}>
-      <h3>{`${props.work.title} - ${props.work.company}`}</h3>
+      <h3>
+        {`${props.work.title} - `}
+        <InlineLink href={props.work.href}>{props.work.company}</InlineLink>
+      </h3>
       <em>{props.work.date}</em>
       <ul>
         {props.work.bullets.map((bullet) => {

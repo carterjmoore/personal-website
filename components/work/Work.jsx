@@ -8,6 +8,7 @@ const works = [
   {
     id: 0,
     company: 'Mach85',
+    href: 'https://mach85.com/',
     title: 'Junior Software Developer Co-op',
     date: 'September - December 2021',
     bullets: ['Something about Mach85', 'Something else about Mach85'],
@@ -15,6 +16,7 @@ const works = [
   {
     id: 1,
     company: 'Populus Global Solutions',
+    href: 'https://www.populusplus.com/',
     title: 'Full Stack Developer Co-op',
     date: 'May - August 2022',
     bullets: ['Something about Populus', 'Something else about Populus'],
