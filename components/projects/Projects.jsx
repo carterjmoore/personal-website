@@ -1,13 +1,15 @@
+import ScrollTo from '../ui/ScrollTo';
 import classes from './Projects.module.scss';
 import Slider from './Slider';
 
 const Projects = () => {
   return (
-    <div id="personal-projects" className={`layout ${classes.projects}`}>
+    <div className={`layout ${classes.projects}`}>
       <div className={classes.wrapper}>
-        <h1 className={`section-header ${classes.header}`}>
+        <ScrollTo id="personal-projects" />
+        <h2 className={`section-header ${classes.header}`}>
           Personal Projects
-        </h1>
+        </h2>
         <Slider />
       </div>
     </div>

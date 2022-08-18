@@ -53,6 +53,13 @@ ul {
   font-size: 2.5rem;
 }
 
+.scrollTo {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
 .border-highlight {
   box-shadow: 0 10px 30px -15px $highlight;
   border-radius: $border-radius;

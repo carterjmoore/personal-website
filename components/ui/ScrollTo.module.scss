@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+.scrollTo {
+  display: block;
+  position: relative;
+  top: calc(-1rem - $header-height);
+  visibility: hidden;
+}

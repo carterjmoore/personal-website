@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ScrollTo from '../ui/ScrollTo';
 import SelectButton from './SelectButton';
 import SelectedWork from './SelectedWork';
 import classes from './Work.module.scss';
@@ -28,9 +29,10 @@ const Work = () => {
   };
 
   return (
-    <div id="work" className={`layout ${classes.work}`}>
+    <div className={`layout ${classes.work}`}>
       <div className={classes.wrapper}>
-        <h1 className={`section-header`}>Work Experience</h1>
+        <ScrollTo id="work" />
+        <h2 className={`section-header`}>Work Experience</h2>
         <div className={`border-highlight ${classes.container}`}>
           <div className={classes.select}>
             {works.map((work) => {
