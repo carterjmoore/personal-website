@@ -45,13 +45,16 @@
     &:active,
     &.active {
       color: $highlight;
-      padding-bottom: 1rem;
     }
   }
 
-  .logo {
-    font-size: 2rem;
-    color: white;
-    font-weight: bold;
+  .socials {
+    display: flex;
+    gap: 2rem;
+    transition: transform ease-in-out 150ms;
+
+    a:hover {
+      transform: translateY(-2px);
+    }
   }
 }

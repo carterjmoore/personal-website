@@ -1,11 +1,28 @@
 import classes from './Header.module.scss';
 
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Social Links Here</div>
+      <div className={classes.socials}>
+        <a
+          href="https://www.linkedin.com/in/carterjmoore/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+        <a
+          href="https://github.com/carterjmoore?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+        </a>
+      </div>
       <nav>
         <ul>
           <li>
