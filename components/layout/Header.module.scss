@@ -16,24 +16,29 @@ $transform-time: 400ms;
   z-index: 99;
 
   ul {
-    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: baseline;
-  }
 
-  li {
-    margin-bottom: 0;
-    margin-right: 2rem;
-    transition: transform ease-in-out $transform-time;
+    li {
+      margin-bottom: 0;
+      margin-right: 2rem;
+      transition: transform ease-in-out $transform-time;
 
-    &:last-child {
-      margin: 0;
-    }
+      &:last-child {
+        margin: 0;
+      }
 
-    &:hover {
-      transform: translateY(-2px);
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      &::before {
+        content: '';
+        width: 0rem;
+        padding-right: 0rem;
+      }
     }
   }
 

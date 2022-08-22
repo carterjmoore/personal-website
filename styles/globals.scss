@@ -30,7 +30,7 @@ a {
 }
 
 ul {
-  list-style-position: inside;
+  list-style: none;
 
   li {
     color: $shade300;
@@ -39,6 +39,14 @@ ul {
 
   li:last-child {
     margin-bottom: 0;
+  }
+
+  li::before {
+    content: '\27A2';
+    color: $highlight;
+    display: inline-block;
+    width: 1rem;
+    padding-right: 0.5rem;
   }
 }
 
