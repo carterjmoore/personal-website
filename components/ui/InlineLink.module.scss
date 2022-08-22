@@ -2,8 +2,7 @@
 // Adapted from https://codepen.io/jegedeolamide99/pen/MOqrZj
 
 .inlineLink {
-  padding-top: 10px;
-  // color: lighten($color: $highlight, $amount: 10%);
+  display: inline-block;
   color: $highlight;
 
   &:hover {

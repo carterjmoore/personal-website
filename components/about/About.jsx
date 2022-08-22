@@ -11,13 +11,7 @@ const About = () => {
         <div className={classes.columns}>
           <div className={`border-highlight ${classes.text}`}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              mi sem, consequat eu nunc sed, tincidunt condimentum ipsum.
-              Suspendisse neque augue, viverra non neque ac, egestas congue
-              neque. Curabitur at orci posuere, pellentesque nisi a, tincidunt
-              sapien. Sed nec elit nec risus tempor ultricies. Aliquam
-              pellentesque lectus maximus auctor vulputate. Mauris at imperdiet
-              metus. Sed eget lorem metus.
+              Going into university, I had minimal exposure to programming.{' '}
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas

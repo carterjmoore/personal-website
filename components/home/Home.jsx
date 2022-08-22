@@ -1,3 +1,4 @@
+import InlineLink from '../ui/InlineLink';
 import ScrollTo from '../ui/ScrollTo';
 import classes from './Home.module.scss';
 
@@ -10,13 +11,19 @@ const Home = () => {
           <h3 className={classes.hi}>Hi, I&apos;m</h3>
           <h1 className={classes.carter}>Carter Moore.</h1>
           <h1 className={classes.subheader}>
-            A full stack software developer.
+            A passionate software developer.
           </h1>
           <p className={classes.paragraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Currently studying Computer Science at the{' '}
+            <InlineLink href="https://uwaterloo.ca/">
+              University of Waterloo
+            </InlineLink>
+            . I love learning new languages and frameworks, and have lately been
+            spending my free time learning about{' '}
+            <InlineLink href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/">
+              MERN Fullstack Development
+            </InlineLink>
+            .
           </p>
         </div>
       </div>
