@@ -15,7 +15,8 @@ const ColumnList = (props) => {
     const currentColItems = [];
     let j = i;
     while (j < list.length) {
-      currentColItems.push(<li>{list[j]}</li>);
+      const key = list[j] instanceof object ? JSON.stringify(list[j]) : list[j];
+      currentColItems.push(<li key={key}>{list[j]}</li>);
       j += numCols;
     }
     colItems.push(currentColItems);
