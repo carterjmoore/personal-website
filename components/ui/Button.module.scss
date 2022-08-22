@@ -14,19 +14,19 @@
   align-items: center;
   justify-content: center;
   transition: background-color ease-in-out 200ms, color ease-in-out 200ms;
-}
 
-.button:hover,
-.button:active {
-  cursor: pointer;
-  color: $highlight;
-}
+  &:hover,
+  &:active {
+    cursor: pointer;
+    color: $highlight;
+  }
 
-.button:hover {
-  background-color: lighten($color: $dark, $amount: 5%);
-}
+  &:hover {
+    background-color: lighten($color: $dark, $amount: 5%);
+  }
 
-.button:active {
-  transition: none;
-  background-color: lighten($color: $dark, $amount: 10%);
+  &:active {
+    transition: none;
+    background-color: lighten($color: $dark, $amount: 10%);
+  }
 }
