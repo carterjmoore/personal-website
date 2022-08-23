@@ -43,7 +43,7 @@ const About = () => {
             </p>
             <p>
               Recently, I&apos;ve been spending my free time developing{' '}
-              <InlineLink href="https://www.imglabs.io/">imglabs.io</InlineLink>
+              <InlineLink href="https://www.imglabs.io/">imglabs.io</InlineLink>{' '}
               with a couple of friends. We provide image proxying services
               through a more optimized method than competitors, which we plan on{' '}
               <InlineLink href="https://www.imglabs.io/pricing">
