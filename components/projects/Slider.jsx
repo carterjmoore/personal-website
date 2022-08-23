@@ -3,9 +3,12 @@ import ProjectSlide from './ProjectSlide';
 import classes from './Slider.module.scss';
 
 const projects = [
-  { name: 'imglabs.io' },
-  { name: 'Reflex Revolution' },
-  { name: 'Gun Time' },
+  {
+    name: 'imglabs.io',
+    skills: ['React', 'Next.js', 'Tailwind UI', 'Node.js', 'Supabase'],
+  },
+  { name: 'Reflex Revolution', skills: [] },
+  { name: 'Gun Time', skills: [] },
 ];
 
 const Slider = () => {

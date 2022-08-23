@@ -30,12 +30,12 @@ a {
 }
 
 ul {
-  padding-left: 1.1ch;
   li {
+    padding-left: 1rem;
+    list-style-position: inside;
     color: $shade300;
     margin-bottom: 0.5rem;
     list-style-type: '\27A2';
-    padding-inline-start: 1ch;
 
     &::marker {
       color: $highlight;

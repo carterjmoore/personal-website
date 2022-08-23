@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Button from '../ui/Button';
 import ColumnList from '../ui/ColumnList';
 import classes from './ProjectSlide.module.scss';
@@ -8,9 +9,18 @@ const ProjectSlide = (props) => {
       <div className={classes.top}>
         <div className={classes.heading}>
           <h3>{props.project.name}</h3>
-          <ColumnList list={['test1', 'test2']} numCols={2} />
+          <div className={classes.skills}>
+            <ColumnList list={props.project.skills} numCols={3} />
+          </div>
         </div>
-        <div className={classes.image}></div>
+        <div className={`shadow-highlight ${classes.image}`}>
+          <Image
+            src="/me.jpg"
+            width="1224px"
+            height="816px"
+            alt="Image Of Carter"
+          ></Image>
+        </div>
       </div>
       <div className={classes.info}></div>
       <div className={classes.buttons}>
