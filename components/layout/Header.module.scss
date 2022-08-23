@@ -22,6 +22,7 @@ $transform-time: 400ms;
     align-items: baseline;
 
     li {
+      padding-inline-start: 0;
       margin-bottom: 0;
       margin-right: 2rem;
       transition: transform ease-in-out $transform-time;
@@ -34,10 +35,8 @@ $transform-time: 400ms;
         transform: translateY(-2px);
       }
 
-      &::before {
+      &::marker {
         content: '';
-        width: 0rem;
-        padding-right: 0rem;
       }
     }
   }
