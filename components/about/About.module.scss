@@ -25,6 +25,10 @@
     margin-bottom: 1rem;
     line-height: 1.5rem;
     color: $shade300;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
