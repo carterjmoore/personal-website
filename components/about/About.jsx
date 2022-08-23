@@ -2,6 +2,7 @@ import Image from 'next/image';
 import InlineLink from '../ui/InlineLink';
 import ScrollTo from '../ui/ScrollTo';
 import classes from './About.module.scss';
+import ColumnList from '../ui/ColumnList';
 
 const About = () => {
   return (
@@ -59,6 +60,28 @@ const About = () => {
                 height="816px"
                 alt="Image Of Carter"
               ></Image>
+            </div>
+            <div>
+              <h4 className={classes.technologies}>
+                Some technologies I&apos;ve been using lately:
+              </h4>
+              <ColumnList
+                list={[
+                  'React',
+                  'Angular',
+                  'Node.js',
+                  'Express.js',
+                  'MongoDB',
+                  'Next.js',
+                  'TypeScript',
+                  'JavaScript',
+                  'CSS / Sass',
+                  'Java / Spring Boot',
+                  'C++',
+                  'Android Studio',
+                ]}
+                numCols={2}
+              />
             </div>
           </div>
         </div>

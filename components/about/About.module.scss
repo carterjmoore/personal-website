@@ -33,7 +33,13 @@
 }
 
 .image {
+  aspect-ratio: 16 / 9;
   border-radius: $border-radius;
   overflow: hidden;
-  height: 240px;
+  margin-bottom: 1.5rem;
+}
+
+.technologies {
+  color: $shade200;
+  margin-bottom: 1rem;
 }
