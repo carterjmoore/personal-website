@@ -4,7 +4,7 @@ $project-slide-padding: 2rem;
 
 .projects {
   max-width: calc(60rem + 2 * $project-slide-padding);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

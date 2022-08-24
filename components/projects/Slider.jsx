@@ -1,28 +1,20 @@
 import { useState } from 'react';
 import ProjectSlide from './ProjectSlide';
 import classes from './Slider.module.scss';
-
-const projects = [
-  {
-    name: 'imglabs.io',
-    skills: ['React', 'Next.js', 'Tailwind UI', 'Node.js', 'Supabase'],
-  },
-  { name: 'Reflex Revolution', skills: [] },
-  { name: 'Gun Time', skills: [] },
-];
+import PROJECTS from './ProjectData';
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
-      return (prevIndex + 1) % projects.length;
+      return (prevIndex + 1) % PROJECTS.length;
     });
   };
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => {
-      return prevIndex !== 0 ? prevIndex - 1 : projects.length - 1;
+      return prevIndex !== 0 ? prevIndex - 1 : PROJECTS.length - 1;
     });
   };
 
@@ -38,7 +30,7 @@ const Slider = () => {
         className={classes.slider}
         style={{ transform: `translateX(calc(${currentIndex}*(-100%)))` }}
       >
-        {projects.map((project) => {
+        {PROJECTS.map((project) => {
           return (
             <ProjectSlide
               key={project.name}
@@ -50,7 +42,7 @@ const Slider = () => {
         })}
       </div>
       <div className={classes.progress}>
-        {projects.map((project, index) => {
+        {PROJECTS.map((project, index) => {
           return (
             <div
               key={project.name}
