@@ -21,6 +21,7 @@ const works = [
     date: 'May - August 2022',
     bullets: [
       "Developed several key features of the company's web app product from front to back using Angular and Spring Boot.",
+      'Created unit and integration tests for my features, using Jest for Angular and JUnit for Spring Boot.',
       'Used Angular paired with PrimeNG to craft intuitive front-end user experiences.',
       'Leveraged Spring Boot with Java to construct a REST API, allowing users to perform various CRUD operations on several types of data.',
       'Crafted SQL scripts to update and migrate data in a Postgres database.',
