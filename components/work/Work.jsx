@@ -9,17 +9,24 @@ const TRANSITION_TIME = 300;
 
 const Work = () => {
   const [selectedWork, setSelectedWork] = useState(WORKS[0]);
+  const [selectedButtonId, setSelectedButtonId] = useState(WORKS[0].id);
   const [hideSelection, setHideSelection] = useState(false);
+  const [animationTimeout, setAnimationTimeout] = useState(undefined);
 
   const onWorkSelected = (work) => {
     if (selectedWork === work) {
       return;
     }
+    clearTimeout(animationTimeout);
     setHideSelection(true);
-    setTimeout(() => {
-      setSelectedWork(work);
-      setHideSelection(false);
-    }, TRANSITION_TIME);
+    setSelectedButtonId(work.id);
+    setAnimationTimeout(
+      setTimeout(() => {
+        clearTimeout(animationTimeout);
+        setSelectedWork(work);
+        setHideSelection(false);
+      }, TRANSITION_TIME)
+    );
   };
 
   return (
@@ -33,7 +40,7 @@ const Work = () => {
               return (
                 <SelectButton
                   work={work}
-                  selectedId={selectedWork.id}
+                  selectedId={selectedButtonId}
                   onClick={onWorkSelected}
                   key={work.id}
                 />
