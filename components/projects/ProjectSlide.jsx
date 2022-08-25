@@ -41,8 +41,6 @@ const ProjectSlide = (props) => {
         <div className={`shadow-highlight ${classes.image}`}>
           <Image
             src={props.project.image.src}
-            width={props.project.image.width}
-            height={props.project.image.height}
             alt={props.project.image.alt}
             layout="fill"
             objectFit={

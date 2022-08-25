@@ -8,8 +8,6 @@ const PROJECTS = [
     skills: ['React', 'Next.js', 'Tailwind UI', 'Node.js', 'Supabase'],
     image: {
       src: '/imglabs.jpg',
-      width: '1900px',
-      height: '967px',
       alt: 'imglabs.io landing page',
     },
     content: (
@@ -27,7 +25,7 @@ const PROJECTS = [
           I mainly developed the{' '}
           <InlineLink href="https://www.imglabs.io">website</InlineLink> for the
           product, and focused on making it look as professional and modern as
-          possible. Some particular features of the site I developed are the{' '}
+          possible. Some interesting features of the site I developed are the{' '}
           <InlineLink href="https://www.imglabs.io/#demo">
             interactive demo
           </InlineLink>
@@ -51,23 +49,78 @@ const PROJECTS = [
   },
   {
     name: 'Reflex Revolution',
-    skills: [],
+    github: 'https://github.com/fredy20501/reflex-revolution',
+    link: 'TODO',
+    skills: ['Android Studio', 'Java'],
     image: {
-      src: '/imglabs.jpg',
-      width: '1920px',
-      height: '1080px',
-      alt: 'imglabs.io landing page',
+      src: '/reflex-revolution.jpg',
+      alt: 'Several screens of Reflex Revolution',
     },
+    content: (
+      <>
+        <p>
+          Reflex Revolution is a native Android app for a game similar to the
+          toy{' '}
+          <InlineLink href="https://en.wikipedia.org/wiki/Bop_It">
+            Bop It
+          </InlineLink>{' '}
+          by Hasbro. You must complete a series of random actions in
+          increasingly shorter time frames, and and aim for a high score.
+          Running out of time or making one mistake means a game over.
+        </p>
+        <p>
+          The game features 6 game modes, each having a different set of
+          actions, as well as 3 difficulty levels which make you run out of time
+          faster. It also includes a how-to-play, settings menu, music, and
+          voice narration for actions!
+        </p>
+        <p>
+          Check out a <InlineLink href="TODO">gameplay demo</InlineLink> video
+          here!
+        </p>
+      </>
+    ),
   },
   {
     name: 'Gun Time',
-    skills: [],
+    github: 'https://github.com/carterjmoore/Gun-Time',
+    link: 'https://play.unity.com/mg/other/webgl-dvj',
+    skills: ['Unity', 'C#'],
     image: {
-      src: '/imglabs.jpg',
-      width: '1920px',
-      height: '1080px',
-      alt: 'imglabs.io landing page',
+      src: '/gun-time.jpg',
+      alt: 'Gun Time home screen',
     },
+    content: (
+      <>
+        <p>
+          Gun Time is a first-person platformer game with shooter and puzzler
+          aspects. The player breaks into a facility to steal the Time Gun,
+          which allows them to speed up or slow down time for whatever they
+          shoot. The player must use the gun&apos;s powers on enemies and the
+          environment to solve puzzles, and escape the facility alive.
+        </p>
+        <p>
+          The game features seven levels, two enemy types, several types of
+          interactive environmental objects, complex mechanics, and cool
+          physics, all of which lead to tons of fun gameplay! It also
+          incorporates sound effects, music, settings, home and pause screens,
+          and much more.
+        </p>
+        <p>
+          <InlineLink href="https://play.unity.com/mg/other/webgl-dvj">
+            Try the game
+          </InlineLink>{' '}
+          in your browser, or check out a{' '}
+          <InlineLink href="TODO">gameplay demo</InlineLink> here! If
+          you&apos;re having a hard time understanding the mechanics, check out
+          the{' '}
+          <InlineLink href="https://github.com/carterjmoore/Gun-Time/blob/main/README.md">
+            GitHub README
+          </InlineLink>{' '}
+          for more instructions and some optional cheats.
+        </p>
+      </>
+    ),
   },
 ];
 
