@@ -122,6 +122,47 @@ const PROJECTS = [
       </>
     ),
   },
+  {
+    name: 'Portfolio Website',
+    github: 'https://github.com/carterjmoore/personal-website',
+    link: '#',
+    skills: ['React', 'Next.js', 'Sass', 'Vercel', 'Font Awesome'],
+    image: {
+      src: '/portfolio.jpg',
+      alt: 'Portfolio landing page',
+    },
+    content: (
+      <>
+        <p>
+          Rather than using a template for my portfolio website, I decided to
+          build it from scratch in order to improve my React and CSS skills. I
+          tried to rely on dependencies as little as possible (other than for
+          things like icons), so all components in this project were built
+          completely from scratch by myself.
+        </p>
+        <p>
+          I learned a lot of cool CSS techniques while building this website
+          &ndash; I had mostly used CSS frameworks like Tailwind and PrimeNG in
+          the past, so writing it all from scratch with Sass was a big change!
+          Building this website also taught me about how to create cool,
+          reusable components like{' '}
+          <InlineLink href="#personal-projects" local={true}>
+            these links
+          </InlineLink>
+          , as how to approach creating larger, more complex components from
+          scratch. I&apos;m especially proud of how the{' '}
+          <InlineLink href="#work" local={true}>
+            work experience
+          </InlineLink>{' '}
+          and{' '}
+          <InlineLink href="#personal-projects" local={true}>
+            personal projects
+          </InlineLink>{' '}
+          components turned out!
+        </p>
+      </>
+    ),
+  },
 ];
 
 export default PROJECTS;
