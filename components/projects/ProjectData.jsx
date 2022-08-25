@@ -160,6 +160,10 @@ const PROJECTS = [
           </InlineLink>{' '}
           components turned out!
         </p>
+        <p>
+          I plan on updating the site in the near future to be
+          mobile-compatible, and to include more cool CSS effects. Stay tuned!
+        </p>
       </>
     ),
   },
