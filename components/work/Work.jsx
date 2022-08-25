@@ -5,11 +5,21 @@ import SelectedWork from './SelectedWork';
 import classes from './Work.module.scss';
 import WORKS from './WorkData';
 
+const TRANSITION_TIME = 300;
+
 const Work = () => {
   const [selectedWork, setSelectedWork] = useState(WORKS[0]);
+  const [hideSelection, setHideSelection] = useState(false);
 
   const onWorkSelected = (work) => {
-    setSelectedWork(work);
+    if (selectedWork === work) {
+      return;
+    }
+    setHideSelection(true);
+    setTimeout(() => {
+      setSelectedWork(work);
+      setHideSelection(false);
+    }, TRANSITION_TIME);
   };
 
   return (
@@ -30,7 +40,10 @@ const Work = () => {
               );
             })}
           </div>
-          <div className={classes.info}>
+          <div
+            className={`${classes.info} ${hideSelection ? classes.hide : ''}`}
+            style={{ transition: `opacity ease-in-out ${TRANSITION_TIME}ms` }}
+          >
             <SelectedWork work={selectedWork} />
           </div>
         </div>
