@@ -59,6 +59,7 @@ const About = () => {
                 alt="Image Of Carter"
                 layout="fill"
                 objectFit="cover"
+                loading="eager"
               ></Image>
             </div>
             <div>

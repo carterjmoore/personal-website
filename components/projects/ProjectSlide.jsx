@@ -53,6 +53,7 @@ const ProjectSlide = (props) => {
                 ? props.project.image.objectPosition
                 : '50% 50%'
             }
+            loading="eager"
           ></Image>
         </div>
       </div>
