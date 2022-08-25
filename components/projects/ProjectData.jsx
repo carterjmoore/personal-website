@@ -14,8 +14,8 @@ const PROJECTS = [
       <>
         <p>
           ImgLabs is an image proxying service that I developed alongside two
-          friends. We a highly optimized serverless core to serve images with
-          better performance than many competitors, and we plan on{' '}
+          friends. We use a highly optimized serverless core to serve images
+          with better performance than many competitors, and we plan on{' '}
           <InlineLink href="https://www.imglabs.io/pricing">
             marketing
           </InlineLink>{' '}
@@ -65,12 +65,12 @@ const PROJECTS = [
             Bop It
           </InlineLink>{' '}
           by Hasbro. You must complete a series of random actions in
-          increasingly shorter time frames, and and aim for a high score.
-          Running out of time or making one mistake means a game over.
+          increasingly shorter time frames, and aim for a high score. Running
+          out of time or making one mistake means a game over.
         </p>
         <p>
           The game features 6 game modes, each having a different set of
-          actions, as well as 3 difficulty levels which make you run out of time
+          actions, as well as 3 difficulty levels that make you run out of time
           faster. It also includes a how-to-play, settings menu, music, and
           voice narration for actions!
         </p>
@@ -149,7 +149,7 @@ const PROJECTS = [
           <InlineLink href="#personal-projects" local={true}>
             these links
           </InlineLink>
-          , as how to approach creating larger, more complex components from
+          , and how to approach creating larger, more complex components from
           scratch. I&apos;m especially proud of how the{' '}
           <InlineLink href="#work" local={true}>
             work experience
@@ -161,8 +161,8 @@ const PROJECTS = [
           components turned out!
         </p>
         <p>
-          I plan on updating the site in the near future to be
-          mobile-compatible, and to include more cool CSS effects. Stay tuned!
+          I plan on updating the site in the near future to be mobile-compatible
+          and to include more cool CSS effects. Stay tuned!
         </p>
       </>
     ),

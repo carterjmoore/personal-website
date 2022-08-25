@@ -24,7 +24,7 @@ const About = () => {
             </p>
             <p>
               With this newfound motivation, I began investing my free time into
-              building my skills through{' '}
+              expanding my skills through{' '}
               <InlineLink href="#personal-projects" local={true}>
                 personal projects
               </InlineLink>{' '}
@@ -39,7 +39,7 @@ const About = () => {
               <InlineLink href="https://uwaterloo.ca/">
                 larger university
               </InlineLink>
-              . I always have my sights set on attaining new heights.
+              . I&apos;m a fast learner, and always looking to improve.
             </p>
             <p>
               Recently, I&apos;ve been spending my free time developing{' '}

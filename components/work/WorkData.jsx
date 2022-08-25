@@ -23,7 +23,7 @@ const WORKS = [
       'Used Angular paired with PrimeNG to craft intuitive front-end user experiences.',
       'Leveraged Spring Boot with Java to construct a REST API, allowing users to perform various CRUD operations on several types of data.',
       'Crafted SQL scripts to update and migrate data in a Postgres database.',
-      'Worked with a full Atlassian toolset to ensure our team abided to Agile development principles.',
+      'Worked with a full Atlassian suite to ensure our team abided by Agile development principles.',
     ],
   },
 ].reverse();
