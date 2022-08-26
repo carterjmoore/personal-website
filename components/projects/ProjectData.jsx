@@ -141,7 +141,7 @@ const PROJECTS = [
           completely from scratch by myself.
         </p>
         <p>
-          I learned a lot of cool CSS techniques while building this website
+          I learned a lot of neat CSS techniques while building this website
           &ndash; I had mostly used CSS frameworks like Tailwind and PrimeNG in
           the past, so writing it all from scratch with Sass was a big change!
           Building this website also taught me about how to create cool,
