@@ -50,7 +50,7 @@ const PROJECTS = [
   {
     name: 'Reflex Revolution',
     github: 'https://github.com/fredy20501/reflex-revolution',
-    link: 'TODO',
+    link: 'https://youtu.be/q1CD4dVF6Xs',
     skills: ['Android Studio', 'Java'],
     image: {
       src: '/reflex-revolution.jpg',
@@ -75,8 +75,11 @@ const PROJECTS = [
           voice narration for actions!
         </p>
         <p>
-          Check out a <InlineLink href="TODO">gameplay demo</InlineLink> video
-          here!
+          Check out a{' '}
+          <InlineLink href="https://youtu.be/q1CD4dVF6Xs">
+            gameplay demo
+          </InlineLink>{' '}
+          video here!
         </p>
       </>
     ),
@@ -111,9 +114,11 @@ const PROJECTS = [
             Try the game
           </InlineLink>{' '}
           in your browser, or check out a{' '}
-          <InlineLink href="TODO">gameplay demo</InlineLink> here! If
-          you&apos;re having a hard time understanding the mechanics, check out
-          the{' '}
+          <InlineLink href="https://youtu.be/yO3kN4jicp4">
+            gameplay demo
+          </InlineLink>{' '}
+          here! If you&apos;re having a hard time understanding the mechanics,
+          check out the{' '}
           <InlineLink href="https://github.com/carterjmoore/Gun-Time/blob/main/README.md">
             GitHub README
           </InlineLink>{' '}
