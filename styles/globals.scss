@@ -77,3 +77,25 @@ ul {
 .shadow-highlight {
   box-shadow: 0 10px 30px -15px $highlight;
 }
+
+// Scrollbar
+
+html {
+  overflow: overlay;
+  scrollbar-width: thin;
+  scrollbar-color: $shade400 $dark;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $shade400;
+  border: 3px solid $dark;
+  border-radius: 10px;
+}
