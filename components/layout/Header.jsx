@@ -1,10 +1,10 @@
 import classes from './Header.module.scss';
 
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { useContext, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import { useContext } from 'react';
 import MobileContext from '../../context/MobileContext';
 import ModalContext from '../../context/ModalContext';
 import ScrollContext from '../../context/ScrollContext';
@@ -20,7 +20,10 @@ const Header = () => {
 
   let headerClasses = '';
   if (scrollCtx.scrollLocation > 40) {
-    headerClasses = scrollCtx.scrolledDown ? classes.hide : classes.scrolled;
+    headerClasses += classes.scrolled;
+    if (scrollCtx.scrolledDown) {
+      headerClasses += ` ${classes.hide}`;
+    }
   }
 
   return (
