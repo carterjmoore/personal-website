@@ -1,16 +1,19 @@
 import Header from '../components/layout/Header';
 import { MobileContextProvider } from '../context/MobileContext';
 import { ModalContextProvider } from '../context/ModalContext';
+import { ScrollContextProvider } from '../context/ScrollContext';
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ModalContextProvider>
-      <MobileContextProvider>
-        <Header />
-        <Component {...pageProps} />
-      </MobileContextProvider>
-    </ModalContextProvider>
+    <ScrollContextProvider>
+      <ModalContextProvider>
+        <MobileContextProvider>
+          <Header />
+          <Component {...pageProps} />
+        </MobileContextProvider>
+      </ModalContextProvider>
+    </ScrollContextProvider>
   );
 }
 

@@ -14,6 +14,11 @@ $transform-time: 400ms;
   backdrop-filter: blur(6px);
   padding: 0 10%;
   z-index: 99;
+  transition: transform ease-in-out 300ms;
+
+  &.hide {
+    transform: translateY(-$header-height);
+  }
 
   @media (max-width: $mobile-width) {
     padding: 0 5%;

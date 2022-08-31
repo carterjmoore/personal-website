@@ -7,17 +7,23 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import MobileContext from '../../context/MobileContext';
 import ModalContext from '../../context/ModalContext';
+import ScrollContext from '../../context/ScrollContext';
 
 const Header = () => {
   const mobileCtx = useContext(MobileContext);
   const modalCtx = useContext(ModalContext);
+  const scrollCtx = useContext(ScrollContext);
 
   const burgerHandler = () => {
     modalCtx.showModal();
   };
 
   return (
-    <header className={classes.header}>
+    <header
+      className={`${classes.header} ${
+        scrollCtx.scrolledDown ? classes.hide : ''
+      }`}
+    >
       {!mobileCtx.isMobile && (
         <>
           <div className={classes.socials}>
