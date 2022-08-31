@@ -4,6 +4,7 @@ import Home from '../components/home/Home';
 import Projects from '../components/projects/Projects';
 import Work from '../components/work/Work';
 import Head from 'next/head';
+import Modal from '../components/ui/Modal';
 
 export default function Index() {
   return (
@@ -16,6 +17,7 @@ export default function Index() {
           content="Carter Moore's personal portfolio website, built entirely from scratch."
         />
       </Head>
+      <Modal />
       <Home />
       <About />
       <Work />

@@ -15,6 +15,11 @@ $transform-time: 400ms;
   padding: 0 10%;
   z-index: 99;
 
+  @media (max-width: $mobile-width) {
+    padding: 0 5%;
+    justify-content: right;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -41,7 +46,8 @@ $transform-time: 400ms;
     }
   }
 
-  a {
+  a,
+  .burger {
     text-decoration: none;
     font-size: 1rem;
     color: $shade100;
@@ -51,6 +57,17 @@ $transform-time: 400ms;
     &:active,
     &.active {
       color: $highlight;
+    }
+  }
+
+  .burger {
+    font-size: 2rem;
+
+    &:hover,
+    &:active,
+    &.active {
+      cursor: pointer;
+      transform: translateY(-2px);
     }
   }
 
