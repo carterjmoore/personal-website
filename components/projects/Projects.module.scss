@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 
 $project-slide-padding: 2rem;
+$projects-width-change: calc((60rem + 2 * $project-slide-padding) * 10 / 9);
 
 .projects {
   max-width: calc(60rem + 2 * $project-slide-padding);
@@ -8,10 +9,20 @@ $project-slide-padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $projects-width-change) {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
   margin-left: $project-slide-padding;
+  @media (max-width: $projects-width-change) {
+    margin-left: 5%;
+  }
 }
 
 .wrapper {

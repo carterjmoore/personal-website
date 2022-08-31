@@ -5,8 +5,34 @@ import Image from 'next/image';
 import Button from '../ui/Button';
 import ColumnList from '../ui/ColumnList';
 import classes from './ProjectSlide.module.scss';
+import { useRouter } from 'next/router';
+import { useContext } from 'react';
+import MobileContext from '../../context/MobileContext';
 
 const ProjectSlide = (props) => {
+  const mobileCtx = useContext(MobileContext);
+  const router = useRouter();
+
+  const handlePrev = () => {
+    props.onPrev();
+
+    if (mobileCtx.isMobile) {
+      setTimeout(() => {
+        router.push('#personal-projects');
+      }, 300);
+    }
+  };
+
+  const handleNext = () => {
+    props.onNext();
+
+    if (mobileCtx.isMobile) {
+      setTimeout(() => {
+        router.push('#personal-projects');
+      }, 300);
+    }
+  };
+
   return (
     <div className={`border-highlight ${classes.container}`}>
       <div className={classes.top}>
@@ -68,7 +94,7 @@ const ProjectSlide = (props) => {
             paddingBottom: '4px',
             width: '2rem',
           }}
-          onClick={props.onPrev}
+          onClick={handlePrev}
         >
           &#8249;
         </Button>
@@ -81,7 +107,7 @@ const ProjectSlide = (props) => {
             paddingBottom: '4px',
             width: '2rem',
           }}
-          onClick={props.onNext}
+          onClick={handleNext}
         >
           &#8250;
         </Button>

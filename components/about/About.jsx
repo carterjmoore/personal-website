@@ -52,7 +52,7 @@ const About = () => {
               in the near future.
             </p>
           </div>
-          <div>
+          <div className={classes.rightCol}>
             <div className={`shadow-highlight ${classes.image}`}>
               <Image
                 src="/me.jpg"

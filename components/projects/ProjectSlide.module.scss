@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import './Projects.module.scss';
 
 .container {
   flex: 0 0 100%;
@@ -8,6 +9,10 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: $projects-width-change) {
+    // Not sure why, but needed (1/9)% here for the sliding to line up when slider width is 90%
+    margin-right: 11.111111%;
+  }
 }
 
 .top {
@@ -16,10 +21,20 @@
   gap: 50px;
   margin-bottom: 2rem;
 
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .heading {
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    @media (max-width: $mobile-width) {
+      height: auto;
+    }
 
     h3 {
       color: $shade100;
