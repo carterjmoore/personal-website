@@ -14,10 +14,15 @@ $transform-time: 400ms;
   backdrop-filter: blur(6px);
   padding: 0 10%;
   z-index: 99;
-  transition: transform ease-in-out 300ms;
+  transition: all ease-in-out 400ms;
+
+  &.scrolled {
+    box-shadow: 0 10px 30px -10px darken($dark, $amount: 5%);
+    height: $header-scroll-height;
+  }
 
   &.hide {
-    transform: translateY(-$header-height);
+    transform: translateY(calc(-1rem - $header-height));
   }
 
   @media (max-width: $mobile-width) {

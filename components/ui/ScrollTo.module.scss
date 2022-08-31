@@ -3,6 +3,6 @@
 .scrollTo {
   display: block;
   position: relative;
-  top: calc(-1rem - $header-height);
+  top: calc(-1rem - $header-scroll-height);
   visibility: hidden;
 }

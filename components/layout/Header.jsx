@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import MobileContext from '../../context/MobileContext';
 import ModalContext from '../../context/ModalContext';
 import ScrollContext from '../../context/ScrollContext';
@@ -18,12 +18,13 @@ const Header = () => {
     modalCtx.showModal();
   };
 
+  let headerClasses = '';
+  if (scrollCtx.scrollLocation > 40) {
+    headerClasses = scrollCtx.scrolledDown ? classes.hide : classes.scrolled;
+  }
+
   return (
-    <header
-      className={`${classes.header} ${
-        scrollCtx.scrolledDown ? classes.hide : ''
-      }`}
-    >
+    <header className={`${classes.header} ${headerClasses}`}>
       {!mobileCtx.isMobile && (
         <>
           <div className={classes.socials}>
