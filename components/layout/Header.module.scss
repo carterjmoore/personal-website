@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 
-$transform-time: 400ms;
+$transition-time: 400ms;
 
 .header {
   position: fixed;
@@ -14,7 +14,9 @@ $transform-time: 400ms;
   backdrop-filter: blur(6px);
   padding: 0 10%;
   z-index: 99;
-  transition: all ease-in-out 400ms;
+  transition-property: transform, opacity, height;
+  transition-duration: $transition-time;
+  transition-timing-function: ease-in-out;
 
   &.scrolled {
     box-shadow: 0 10px 30px -10px darken($dark, $amount: 5%);
@@ -41,7 +43,7 @@ $transform-time: 400ms;
       padding-inline-start: 0;
       margin-bottom: 0;
       margin-right: 2rem;
-      transition: transform ease-in-out $transform-time;
+      transition: transform ease-in-out $transition-time;
 
       &:last-child {
         margin: 0;
@@ -62,7 +64,7 @@ $transform-time: 400ms;
     text-decoration: none;
     font-size: 1rem;
     color: $shade100;
-    transition: all ease-in-out 300ms;
+    transition: color ease-in-out $transition-time;
 
     &:hover,
     &:active,
@@ -85,10 +87,14 @@ $transform-time: 400ms;
   .socials {
     display: flex;
     gap: 2rem;
-    transition: transform ease-in-out $transform-time;
+    a {
+      transition-property: transform, color;
+      transition-duration: $transition-time;
+      transition-timing-function: ease-in-out;
 
-    a:hover {
-      transform: translateY(-2px);
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
   }
 }

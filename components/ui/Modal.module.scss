@@ -10,7 +10,7 @@
   backdrop-filter: blur(6px);
   z-index: 200;
   transform: translateY(-100vh);
-  transition: all ease-in-out 300ms;
+  transition: transform ease-in-out 300ms;
 
   &.showModal {
     transform: translateY(0);
@@ -30,7 +30,7 @@
       right: 2rem;
       font-size: 3rem;
       color: $shade100;
-      transition: all ease-in-out 300ms;
+      transition: color ease-in-out 300ms;
 
       &:hover {
         color: $highlight;
@@ -47,7 +47,7 @@
         text-decoration: none;
         font-size: 2rem;
         color: $shade100;
-        transition: all ease-in-out 300ms;
+        transition: color ease-in-out 300ms;
         margin-bottom: 3rem;
 
         &:hover,
