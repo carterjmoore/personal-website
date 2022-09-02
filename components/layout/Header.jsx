@@ -28,41 +28,39 @@ const Header = () => {
 
   return (
     <header className={`${classes.header} ${headerClasses}`}>
+      <div className={classes.socials}>
+        <a
+          href="https://www.linkedin.com/in/carterjmoore/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+        <a
+          href="https://github.com/carterjmoore?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+        </a>
+      </div>
       {!mobileCtx.isMobile && (
-        <>
-          <div className={classes.socials}>
-            <a
-              href="https://www.linkedin.com/in/carterjmoore/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            </a>
-            <a
-              href="https://github.com/carterjmoore?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <Link href="#home">Home</Link>
-              </li>
-              <li>
-                <Link href="#about">About</Link>
-              </li>
-              <li>
-                <Link href="#work">Work</Link>
-              </li>
-              <li>
-                <Link href="#personal-projects">Personal Projects</Link>
-              </li>
-            </ul>
-          </nav>
-        </>
+        <nav>
+          <ul>
+            <li>
+              <Link href="#home">Home</Link>
+            </li>
+            <li>
+              <Link href="#about">About</Link>
+            </li>
+            <li>
+              <Link href="#work">Work</Link>
+            </li>
+            <li>
+              <Link href="#personal-projects">Personal Projects</Link>
+            </li>
+          </ul>
+        </nav>
       )}
       {mobileCtx.isMobile && (
         <FontAwesomeIcon
