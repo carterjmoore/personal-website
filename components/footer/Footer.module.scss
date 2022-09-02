@@ -2,18 +2,24 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
+  gap: 0.5rem;
 
-  a {
+  .built {
     color: $shade400;
-    transition: color ease-in-out 200ms;
+    transition: color ease-in-out 400ms;
 
     &:hover,
     &:active {
       cursor: pointer;
       color: $highlight;
     }
+  }
+
+  .linkedIn {
+    color: $shade400;
   }
 }
