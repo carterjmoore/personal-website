@@ -166,8 +166,8 @@ const PROJECTS = [
           components turned out!
         </p>
         <p>
-          I plan on updating the site in the near future to be mobile-compatible
-          and to include more cool CSS effects. Stay tuned!
+          I plan on adding more to the site in the future, such as cool new CSS
+          effects. Stay tuned!
         </p>
       </>
     ),
