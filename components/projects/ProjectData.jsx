@@ -143,7 +143,8 @@ const PROJECTS = [
           build it from scratch in order to improve my React and CSS skills. I
           tried to rely on dependencies as little as possible (other than for
           things like icons), so all components in this project were built
-          completely from scratch by myself.
+          completely from scratch by myself. The site is also fully responsive,
+          and mobile-compatible.
         </p>
         <p>
           I learned a lot of neat CSS techniques while building this website
