@@ -82,7 +82,7 @@ ul {
 html {
   overflow: overlay;
   scrollbar-width: thin;
-  scrollbar-color: $shade400 $dark;
+  scrollbar-color: $shade400 transparent;
 }
 
 ::-webkit-scrollbar {
@@ -90,7 +90,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $dark;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
