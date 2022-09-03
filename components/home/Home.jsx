@@ -1,19 +1,46 @@
+import { useEffect, useState } from 'react';
 import InlineLink from '../ui/InlineLink';
 import ScrollTo from '../ui/ScrollTo';
 import classes from './Home.module.scss';
 
 const Home = () => {
+  const [showHi, setShowHi] = useState(false);
+  const [showCarter, setShowCarter] = useState(false);
+  const [showSubHeader, setShowSubHeader] = useState(false);
+  const [showParargraph, setShowParargraph] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setShowHi(true), 1600);
+    setTimeout(() => setShowCarter(true), 2400);
+    setTimeout(() => setShowSubHeader(true), 3800);
+    setTimeout(() => setShowParargraph(true), 5800);
+  }, []);
+
   return (
     <>
       <ScrollTo id="home" />
       <div className={classes.home}>
         <div className={'layout ' + classes['home-textbox']}>
-          <h3 className={classes.hi}>Hi, I&apos;m</h3>
-          <h1 className={classes.carter}>Carter Moore.</h1>
-          <h1 className={classes.subheader}>
+          <h3 className={`${classes.hi} ${!showHi ? classes.hide : ''}`}>
+            Hi, I&apos;m
+          </h3>
+          <h1
+            className={`${classes.carter} ${!showCarter ? classes.hide : ''}`}
+          >
+            Carter Moore.
+          </h1>
+          <h1
+            className={`${classes.subheader} ${
+              !showSubHeader ? classes.hide : ''
+            }`}
+          >
             A passionate software developer.
           </h1>
-          <p className={classes.paragraph}>
+          <p
+            className={`${classes.paragraph} ${
+              !showParargraph ? classes.hide : ''
+            }`}
+          >
             Currently studying Computer Science at the{' '}
             <InlineLink href="https://uwaterloo.ca/">
               University of Waterloo

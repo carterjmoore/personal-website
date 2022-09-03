@@ -37,3 +37,14 @@
   max-width: 30rem;
   line-height: 1.5rem;
 }
+
+.hi,
+.carter,
+.subheader,
+.paragraph {
+  transition: opacity ease-in-out 1000ms;
+
+  &.hide {
+    opacity: 0;
+  }
+}
