@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Link from 'next/link';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import MobileContext from '../../context/MobileContext';
 import ModalContext from '../../context/ModalContext';
 import ScrollContext from '../../context/ScrollContext';
@@ -15,9 +15,25 @@ const Header = () => {
   const modalCtx = useContext(ModalContext);
   const scrollCtx = useContext(ScrollContext);
 
+  const [showLinkedIn, setShowLinkedIn] = useState(false);
+  const [showGithub, setShowGithub] = useState(false);
+  const [showHome, setShowHome] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showWork, setShowWork] = useState(false);
+  const [showProjects, setShowProjects] = useState(false);
+
   const burgerHandler = () => {
     modalCtx.showModal();
   };
+
+  useEffect(() => {
+    setTimeout(() => setShowLinkedIn(true), 200);
+    setTimeout(() => setShowGithub(true), 400);
+    setTimeout(() => setShowHome(true), 600);
+    setTimeout(() => setShowAbout(true), 800);
+    setTimeout(() => setShowWork(true), 1000);
+    setTimeout(() => setShowProjects(true), 1200);
+  }, []);
 
   let headerClasses = '';
   if (scrollCtx.scrollLocation > 40) {
@@ -34,6 +50,7 @@ const Header = () => {
           href="https://www.linkedin.com/in/carterjmoore/"
           target="_blank"
           rel="noopener noreferrer"
+          className={!showLinkedIn ? classes.hide : ''}
         >
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
@@ -41,6 +58,7 @@ const Header = () => {
           href="https://github.com/carterjmoore?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
+          className={!showGithub ? classes.hide : ''}
         >
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
@@ -48,16 +66,16 @@ const Header = () => {
       {!mobileCtx.isMobile && (
         <nav>
           <ul>
-            <li>
+            <li className={!showHome ? classes.hide : ''}>
               <Link href="#home">Home</Link>
             </li>
-            <li>
+            <li className={!showAbout ? classes.hide : ''}>
               <Link href="#about">About</Link>
             </li>
-            <li>
+            <li className={!showWork ? classes.hide : ''}>
               <Link href="#work">Work</Link>
             </li>
-            <li>
+            <li className={!showProjects ? classes.hide : ''}>
               <Link href="#personal-projects">Personal Projects</Link>
             </li>
           </ul>
@@ -66,7 +84,7 @@ const Header = () => {
       {mobileCtx.isMobile && (
         <FontAwesomeIcon
           onClick={burgerHandler}
-          className={classes.burger}
+          className={`${classes.burger} ${!showHome ? classes.hide : ''}`}
           icon={faBars}
         />
       )}

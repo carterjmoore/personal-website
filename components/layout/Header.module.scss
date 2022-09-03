@@ -32,6 +32,24 @@ $transition-time: 400ms;
     padding: 0 5%;
   }
 
+  .socials {
+    display: flex;
+    gap: 2rem;
+    a {
+      transition-property: transform, color, opacity;
+      transition-duration: $transition-time;
+      transition-timing-function: ease-in-out;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      &.hide {
+        opacity: 0;
+      }
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -42,7 +60,9 @@ $transition-time: 400ms;
       padding-inline-start: 0;
       margin-bottom: 0;
       margin-right: 2rem;
-      transition: transform ease-in-out $transition-time;
+      transition-property: transform, opacity;
+      transition-duration: $transition-time;
+      transition-timing-function: ease-in-out;
 
       &:last-child {
         margin: 0;
@@ -55,6 +75,10 @@ $transition-time: 400ms;
       &::marker {
         content: '';
       }
+
+      &.hide {
+        opacity: 0;
+      }
     }
   }
 
@@ -63,8 +87,9 @@ $transition-time: 400ms;
     text-decoration: none;
     font-size: 1rem;
     color: $shade100;
-    transition: color ease-in-out $transition-time,
-      transform ease-in-out $transition-time;
+    transition-property: transform, color, opacity;
+    transition-duration: $transition-time;
+    transition-timing-function: ease-in-out;
 
     &:hover,
     &:active,
@@ -82,19 +107,9 @@ $transition-time: 400ms;
       cursor: pointer;
       transform: translateY(-2px);
     }
-  }
 
-  .socials {
-    display: flex;
-    gap: 2rem;
-    a {
-      transition-property: transform, color;
-      transition-duration: $transition-time;
-      transition-timing-function: ease-in-out;
-
-      &:hover {
-        transform: translateY(-2px);
-      }
+    &.hide {
+      opacity: 0;
     }
   }
 }
