@@ -1,0 +1,7 @@
+.showOnScroll {
+  transition: opacity ease-in-out 1000ms;
+
+  &.hide {
+    opacity: 0;
+  }
+}

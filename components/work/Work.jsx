@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ScrollTo from '../ui/ScrollTo';
+import ShowOnScroll from '../ui/ShowOnScroll';
 import SelectButton from './SelectButton';
 import SelectedWork from './SelectedWork';
 import classes from './Work.module.scss';
@@ -30,32 +31,34 @@ const Work = () => {
   };
 
   return (
-    <div className={`layout ${classes.work}`}>
-      <div className={classes.wrapper}>
-        <ScrollTo id="work" />
-        <h2 className={`section-header`}>Work Experience</h2>
-        <div className={`border-highlight ${classes.container}`}>
-          <div className={classes.select}>
-            {WORKS.map((work) => {
-              return (
-                <SelectButton
-                  work={work}
-                  selectedId={selectedButtonId}
-                  onClick={onWorkSelected}
-                  key={work.id}
-                />
-              );
-            })}
-          </div>
-          <div
-            className={`${classes.info} ${hideSelection ? classes.hide : ''}`}
-            style={{ transition: `opacity ease-in-out ${TRANSITION_TIME}ms` }}
-          >
-            <SelectedWork work={selectedWork} />
+    <ShowOnScroll>
+      <div className={`layout ${classes.work}`}>
+        <div className={classes.wrapper}>
+          <ScrollTo id="work" />
+          <h2 className={`section-header`}>Work Experience</h2>
+          <div className={`border-highlight ${classes.container}`}>
+            <div className={classes.select}>
+              {WORKS.map((work) => {
+                return (
+                  <SelectButton
+                    work={work}
+                    selectedId={selectedButtonId}
+                    onClick={onWorkSelected}
+                    key={work.id}
+                  />
+                );
+              })}
+            </div>
+            <div
+              className={`${classes.info} ${hideSelection ? classes.hide : ''}`}
+              style={{ transition: `opacity ease-in-out ${TRANSITION_TIME}ms` }}
+            >
+              <SelectedWork work={selectedWork} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </ShowOnScroll>
   );
 };
 
