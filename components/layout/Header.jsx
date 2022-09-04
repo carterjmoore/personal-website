@@ -27,12 +27,12 @@ const Header = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => setShowLinkedIn(true), 200);
-    setTimeout(() => setShowGithub(true), 400);
-    setTimeout(() => setShowHome(true), 600);
-    setTimeout(() => setShowAbout(true), 800);
-    setTimeout(() => setShowWork(true), 1000);
-    setTimeout(() => setShowProjects(true), 1200);
+    setTimeout(() => setShowLinkedIn(true), 600);
+    setTimeout(() => setShowGithub(true), 800);
+    setTimeout(() => setShowHome(true), 1000);
+    setTimeout(() => setShowAbout(true), 1200);
+    setTimeout(() => setShowWork(true), 1400);
+    setTimeout(() => setShowProjects(true), 1600);
   }, []);
 
   let headerClasses = '';
