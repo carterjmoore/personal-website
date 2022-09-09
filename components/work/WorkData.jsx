@@ -9,6 +9,7 @@ const WORKS = [
       "Developed robust, maintainable code for the company's SaaS desktop application product.",
       'Engineered features for two separate releases of the product – the first in Java with UI developed in JavaFX, and the second with C++, using Qt to build the UI.',
       'Worked closely with executive members of the company to implement requested features and fix existing issues as efficiently as possible, within a small Agile team.',
+      'Used CMake and Conan to manage dependencies for the software.',
     ],
   },
   {
