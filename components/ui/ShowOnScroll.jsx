@@ -8,7 +8,6 @@ const ShowOnScroll = (props) => {
   const [hasScrolledTo, setHasScrolledTo] = useState(false);
 
   useEffect(() => {
-    console.log(ref.current.offsetTop);
     if (
       scrollCtx.scrollLocation >=
       ref.current.offsetTop - window.innerHeight / 2

@@ -5,14 +5,25 @@ import PROJECTS from './ProjectData';
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideDebounce, setSlideDebounce] = useState(false);
 
   const handleNext = () => {
+    if (slideDebounce) {
+      return;
+    }
+
+    debounceSliding();
     setCurrentIndex((prevIndex) => {
       return (prevIndex + 1) % PROJECTS.length;
     });
   };
 
   const handlePrev = () => {
+    if (slideDebounce) {
+      return;
+    }
+
+    debounceSliding();
     setCurrentIndex((prevIndex) => {
       return prevIndex !== 0 ? prevIndex - 1 : PROJECTS.length - 1;
     });
@@ -20,8 +31,21 @@ const Slider = () => {
 
   const handleSelect = (index) => {
     return () => {
+      if (slideDebounce) {
+        return;
+      }
+
+      debounceSliding();
       setCurrentIndex(index);
     };
+  };
+
+  // Slider was sometimes skipping a slide on button click, so this is a fix to that
+  const debounceSliding = () => {
+    setSlideDebounce(true);
+    setTimeout(() => {
+      setSlideDebounce(false);
+    }, 300);
   };
 
   return (
