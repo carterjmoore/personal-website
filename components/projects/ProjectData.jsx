@@ -5,7 +5,14 @@ const PROJECTS = [
     name: 'imglabs.io',
     github: 'https://github.com/imglabs-io',
     link: 'https://www.imglabs.io/',
-    skills: ['React', 'Next.js', 'Tailwind UI', 'Node.js', 'Supabase'],
+    skills: [
+      'React',
+      'Next.js',
+      'Tailwind UI',
+      'Node.js',
+      'Supabase',
+      'Authentication',
+    ],
     image: {
       src: '/imglabs.jpg',
       alt: 'imglabs.io landing page',
