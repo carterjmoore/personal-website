@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import InlineLink from '../ui/InlineLink';
 import ScrollTo from '../ui/ScrollTo';
 import ShowOnScroll from '../ui/ShowOnScroll';
 import SelectButton from './SelectButton';
@@ -35,7 +36,14 @@ const Work = () => {
       <div className={`layout ${classes.work}`}>
         <div className={classes.wrapper}>
           <ScrollTo id="work" />
-          <h2 className={`section-header`}>Work Experience</h2>
+          <h2 className={`section-header ${classes.workHeader}`}>
+            Work Experience
+          </h2>
+          <p className={classes.recommendations}>
+            <InlineLink href="https://www.linkedin.com/in/carterjmoore/details/recommendations/">
+              View recommendations from my employers and colleagues
+            </InlineLink>
+          </p>
           <div className={`border-highlight ${classes.container}`}>
             <div className={classes.select}>
               {WORKS.map((work) => {
