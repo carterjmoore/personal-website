@@ -62,7 +62,10 @@ const ProjectSlide = (props) => {
             </div>
           )}
           <div className={classes.skills}>
-            <ColumnList list={props.project.skills} numCols={3} />
+            <ColumnList
+              list={props.project.skills}
+              numCols={mobileCtx.isMobile ? 2 : 3}
+            />
           </div>
         </div>
         <div className={`shadow-highlight ${classes.image}`}>
