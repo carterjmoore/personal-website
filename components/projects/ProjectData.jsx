@@ -174,8 +174,8 @@ const PROJECTS = [
           components turned out!
         </p>
         <p>
-          I plan on adding more to the site in the future, such as cool new CSS
-          effects. Stay tuned!
+          I plan on keeping the site updated with new projects and work
+          experience as I grow in my career, so stay tuned!
         </p>
       </>
     ),
