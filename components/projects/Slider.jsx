@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useContext, useState } from 'react';
+import MobileContext from '../../context/MobileContext';
+import PROJECTS from './ProjectData';
 import ProjectSlide from './ProjectSlide';
 import classes from './Slider.module.scss';
-import PROJECTS from './ProjectData';
 
 const Slider = () => {
+  const router = useRouter();
+  const mobileCtx = useContext(MobileContext);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slideDebounce, setSlideDebounce] = useState(false);
 
@@ -13,6 +17,9 @@ const Slider = () => {
     }
 
     debounceSliding();
+
+    scrollIfMobile();
+
     setCurrentIndex((prevIndex) => {
       return (prevIndex + 1) % PROJECTS.length;
     });
@@ -24,6 +31,9 @@ const Slider = () => {
     }
 
     debounceSliding();
+
+    scrollIfMobile();
+
     setCurrentIndex((prevIndex) => {
       return prevIndex !== 0 ? prevIndex - 1 : PROJECTS.length - 1;
     });
@@ -36,6 +46,9 @@ const Slider = () => {
       }
 
       debounceSliding();
+
+      scrollIfMobile();
+
       setCurrentIndex(index);
     };
   };
@@ -46,6 +59,14 @@ const Slider = () => {
     setTimeout(() => {
       setSlideDebounce(false);
     }, 300);
+  };
+
+  const scrollIfMobile = () => {
+    if (mobileCtx.isMobile) {
+      setTimeout(() => {
+        router.push('#personal-projects');
+      }, 300);
+    }
   };
 
   return (
@@ -69,7 +90,7 @@ const Slider = () => {
         {PROJECTS.map((project, index) => {
           return (
             <div
-              key={project.name}
+              key={`${project.name}Circle`}
               onClick={handleSelect(index)}
               className={`${classes['progress-circle']} ${
                 index === currentIndex ? classes.selected : ''

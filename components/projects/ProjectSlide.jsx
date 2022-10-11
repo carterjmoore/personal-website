@@ -1,37 +1,23 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import { useContext } from 'react';
+import MobileContext from '../../context/MobileContext';
 import Button from '../ui/Button';
 import ColumnList from '../ui/ColumnList';
 import classes from './ProjectSlide.module.scss';
-import { useRouter } from 'next/router';
-import { useContext } from 'react';
-import MobileContext from '../../context/MobileContext';
 
 const ProjectSlide = (props) => {
   const mobileCtx = useContext(MobileContext);
-  const router = useRouter();
 
   const handlePrev = () => {
     props.onPrev();
-
-    if (mobileCtx.isMobile) {
-      setTimeout(() => {
-        router.push('#personal-projects');
-      }, 300);
-    }
   };
 
   const handleNext = () => {
     props.onNext();
-
-    if (mobileCtx.isMobile) {
-      setTimeout(() => {
-        router.push('#personal-projects');
-      }, 300);
-    }
   };
 
   return (
