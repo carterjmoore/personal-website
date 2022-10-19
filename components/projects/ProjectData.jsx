@@ -2,6 +2,67 @@ import InlineLink from '../../components/ui/InlineLink';
 
 const PROJECTS = [
   {
+    name: 'SharePlace',
+    github: 'https://github.com/carterjmoore/share-place-backend',
+    link: 'https://shareplace.cartermoore.ca/',
+    skills: [
+      'Node.js',
+      'Express.js',
+      'React',
+      'MongoDB',
+      'Mongoose',
+      'Google Maps API',
+    ],
+    image: {
+      src: '/shareplace.jpg',
+      alt: 'SharePlace landing page',
+    },
+    content: (
+      <>
+        <p>
+          <InlineLink href="https://shareplace.cartermoore.ca">
+            SharePlace
+          </InlineLink>{' '}
+          is a social media app for sharing places. View a list of users, and
+          click a user to view the places they&apos;ve shared. Each place is
+          saved with an image and details about the place. SharePlace makes use
+          of the
+          <InlineLink href="https://developers.google.com/maps/documentation/geocoding">
+            Google Maps Geocoding API
+          </InlineLink>{' '}
+          to convert the place&apos;s address to coordinates, and then allows
+          you to view that location on Google Maps in-app. You can also create
+          an account, upload a unique profile picture, and share your own
+          places!
+        </p>
+        <p>
+          SharePlace was built on the{' '}
+          <InlineLink href="https://www.mongodb.com/mern-stack">
+            MERN stack
+          </InlineLink>{' '}
+          (MongoDB, Express.js, React.js, Node.js) with the purpose of growing
+          my knowledge of these technologies. While I&apos;ve done a fair bit of
+          React development prior, this was my first major fullstack app using
+          MongoDB, Express, and Node, so it was a great learning experience, and
+          I can now say I&apos;m very comfortable with this tech stack. The
+          project also taught me about several other important topics like JWT
+          authorization, password hashing, and file upload/storage on a backend.
+        </p>
+        <p>
+          This project was created while following the{' '}
+          <InlineLink href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide">
+            MERN Fullstack Guide
+          </InlineLink>{' '}
+          Udemy course by{' '}
+          <InlineLink href="https://academind.com">Academind</InlineLink>. I
+          coded along and put my own spin on the implementation for many parts
+          of the app, but credit for the overall design, code structure, and
+          idea goes to them.
+        </p>
+      </>
+    ),
+  },
+  {
     name: 'imglabs.io',
     github: 'https://github.com/imglabs-io',
     link: 'https://www.imglabs.io/',
