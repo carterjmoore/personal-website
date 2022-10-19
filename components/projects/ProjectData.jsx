@@ -26,7 +26,7 @@ const PROJECTS = [
           is a social media app for sharing places. View a list of users, and
           click a user to view the places they&apos;ve shared. Each place is
           saved with an image and details about the place. SharePlace makes use
-          of the
+          of the{' '}
           <InlineLink href="https://developers.google.com/maps/documentation/geocoding">
             Google Maps Geocoding API
           </InlineLink>{' '}
