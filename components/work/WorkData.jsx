@@ -27,6 +27,17 @@ const WORKS = [
       'Took advantage of a full Atlassian suite to ensure our team abided by Agile development principles.',
     ],
   },
+  {
+    id: 2,
+    company: 'Khan Academy',
+    href: 'https://www.khanacademy.org/',
+    title: 'Software Engineer Intern',
+    date: 'May - August 2023',
+    bullets: [
+      'Full-stack web development using React for frontend and Go for backend.',
+      'More details once the internship starts!',
+    ],
+  },
 ].reverse();
 
 export default WORKS;
