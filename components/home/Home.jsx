@@ -34,7 +34,7 @@ const Home = () => {
               !showSubHeader ? classes.hide : ''
             }`}
           >
-            A passionate software developer.
+            A passionate software engineer.
           </h1>
           <p
             className={`${classes.paragraph} ${
