@@ -36,29 +36,29 @@ const About = () => {
                 <InlineLink href="https://udemy.com/">
                   online courses
                 </InlineLink>
-                . Since then, I&apos;ve completed another co-op term where I
-                worked in a{' '}
+                . After interning at{' '}
                 <InlineLink href="https://populusplus.com/">
-                  larger team
+                  another local startup
                 </InlineLink>
-                , and I&apos;ve transferred to a{' '}
+                , I decided to transfer to a
                 <InlineLink href="https://uwaterloo.ca/">
                   larger university
-                </InlineLink>
-                . I&apos;m a fast learner, and always looking to improve.
+                </InlineLink>{' '}
+                out of province, in search of new opportunities.
               </p>
               <p>
-                Recently, I&apos;ve been spending my free time developing{' '}
-                <InlineLink href="https://www.imglabs.io/">
-                  imglabs.io
-                </InlineLink>{' '}
-                with a couple of friends. We provide image proxying services
-                through a more optimized method than competitors, which we plan
-                on{' '}
-                <InlineLink href="https://www.imglabs.io/pricing">
-                  marketing
-                </InlineLink>{' '}
-                in the near future.
+                This led to my current internship at{' '}
+                <InlineLink href="https://www.khanacademy.org/">
+                  Khan Academy
+                </InlineLink>
+                , where I&apos;m working to develop{' '}
+                <InlineLink href="https://www.khanacademy.org/khan-labs">
+                  Khanmigo
+                </InlineLink>
+                , an AI tutor chatbot powered by OpenAI&apos;s{' '}
+                <InlineLink href="https://openai.com/gpt-4">GPT-4</InlineLink>.
+                I&apos;m incredibly excited to get the chance to work with such
+                cutting-edge technology as the wave of AI sweeps over our world!
               </p>
             </div>
             <div className={classes.rightCol}>
@@ -78,11 +78,11 @@ const About = () => {
                 <ColumnList
                   list={[
                     'React',
+                    'Go',
                     'Angular',
                     'Node.js',
                     'Express.js',
                     'MongoDB',
-                    'Next.js',
                     'TypeScript',
                     'JavaScript',
                     'CSS / Sass',
