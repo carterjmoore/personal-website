@@ -45,10 +45,14 @@ const Home = () => {
             <InlineLink href="https://uwaterloo.ca/">
               University of Waterloo
             </InlineLink>
-            . I love learning new languages and frameworks, and have lately been
-            spending my free time learning about{' '}
-            <InlineLink href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/">
-              MERN Fullstack Development
+            . I love learning new languages, frameworks, and technologies;
+            lately I&apos;ve been spending my time learning about{' '}
+            <InlineLink href="https://www.khanacademy.org/khan-labs">
+              AI
+            </InlineLink>{' '}
+            and{' '}
+            <InlineLink href="https://developers.google.com/machine-learning/crash-course">
+              Machine Learning
             </InlineLink>
             .
           </p>
