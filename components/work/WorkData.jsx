@@ -32,10 +32,13 @@ const WORKS = [
     company: 'Khan Academy',
     href: 'https://www.khanacademy.org/',
     title: 'Software Engineer Intern',
-    date: 'May - August 2023',
+    date: 'May - July 2023',
     bullets: [
-      'Full-stack web development using React for frontend and Go for backend.',
-      'More details once the internship starts!',
+      'Developed and contributed to Khanmigo, Khan Academy’s AI tutor chatbot powered by GPT-4, as a member of the Guided Learning team.',
+      'Collaborated with a 3-person subteam of software engineers to drive “Khanmigo Insights”, a feature allowing Khanmigo to learn about the user, and tailor responses accordingly.',
+      'Engineered and refined prompts to minimize token cost while optimizing chatbot behavior.',
+      'Worked in a full-stack capacity, utilizing React for frontend interfaces, GraphQL for data querying, and Go paired with OpenAI’s API for backend logic and AI interaction.',
+      'Participated in an Agile SDLC, leveraging Sprint Planning and Atlassian Tools, while actively engaging in code reviews to ensure a streamlined workflow.',
     ],
   },
 ].reverse();
