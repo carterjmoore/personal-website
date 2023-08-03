@@ -40,7 +40,7 @@ const About = () => {
                 <InlineLink href="https://populusplus.com/">
                   another local startup
                 </InlineLink>
-                , I decided to transfer to a
+                , I decided to transfer to a{' '}
                 <InlineLink href="https://uwaterloo.ca/">
                   larger university
                 </InlineLink>{' '}
