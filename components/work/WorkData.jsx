@@ -19,7 +19,7 @@ const WORKS = [
     title: 'Full Stack Developer Co-op',
     date: 'May - August 2022',
     bullets: [
-      "Worked in the same capacity as a full-time developer, implementing several key features of the company's web app product from front to back using Angular and Spring Boot.",
+      "Implemented several key features of the company's web app product from front to back using Angular and Spring Boot.",
       'Created unit and integration tests for my features, using Jest for Angular and JUnit for Spring Boot.',
       'Used Angular paired with PrimeNG to craft intuitive front-end user experiences.',
       'Leveraged Spring Boot with Java to construct a REST API, creating endpoints to allow for the manipulation of complex datasets.',
@@ -35,8 +35,8 @@ const WORKS = [
     date: 'May - July 2023',
     bullets: [
       'Developed and contributed to Khanmigo, Khan Academy’s AI tutor chatbot powered by GPT-4, as a member of the Guided Learning team.',
-      'Collaborated with a 3-person subteam of software engineers to drive “Khanmigo Insights”, a feature allowing Khanmigo to learn about the user, and tailor responses accordingly.',
-      'Engineered and refined prompts to minimize token cost while optimizing chatbot behavior.',
+      'Collaborated with a 3-person subteam of software engineers to drive “Khanmigo Insights”, a feature enabling Khanmigo to learn about the user, and tailor responses accordingly.',
+      'Prompt engineered to optimize chatbot behavior while minimizing token cost.',
       'Worked in a full-stack capacity, utilizing React for frontend interfaces, GraphQL for data querying, and Go paired with OpenAI’s API for backend logic and AI interaction.',
       'Participated in an Agile SDLC, leveraging Sprint Planning and Atlassian Tools, while actively engaging in code reviews to ensure a streamlined workflow.',
     ],
