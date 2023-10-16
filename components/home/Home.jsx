@@ -10,10 +10,10 @@ const Home = () => {
   const [showParargraph, setShowParargraph] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setShowHi(true), 2000);
-    setTimeout(() => setShowCarter(true), 2800);
-    setTimeout(() => setShowSubHeader(true), 4200);
-    setTimeout(() => setShowParargraph(true), 6200);
+    setTimeout(() => setShowHi(true), 2200);
+    setTimeout(() => setShowCarter(true), 3000);
+    setTimeout(() => setShowSubHeader(true), 4400);
+    setTimeout(() => setShowParargraph(true), 6400);
   }, []);
 
   return (

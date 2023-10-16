@@ -21,6 +21,7 @@ const Header = () => {
   const [showAbout, setShowAbout] = useState(false);
   const [showWork, setShowWork] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
+  const [showResume, setShowResume] = useState(false);
 
   const burgerHandler = () => {
     modalCtx.showModal();
@@ -33,6 +34,7 @@ const Header = () => {
     setTimeout(() => setShowAbout(true), 1200);
     setTimeout(() => setShowWork(true), 1400);
     setTimeout(() => setShowProjects(true), 1600);
+    setTimeout(() => setShowResume(true), 1800);
   }, []);
 
   let headerClasses = '';
@@ -77,6 +79,11 @@ const Header = () => {
             </li>
             <li className={!showProjects ? classes.hide : ''}>
               <Link href="#personal-projects">Personal Projects</Link>
+            </li>
+            <li className={!showResume ? classes.hide : ''}>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
             </li>
           </ul>
         </nav>

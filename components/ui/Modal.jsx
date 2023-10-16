@@ -31,6 +31,9 @@ const Modal = () => {
           <Link href="#about">About</Link>
           <Link href="#work">Work</Link>
           <Link href="#personal-projects">Personal Projects</Link>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
         </div>
       </div>
     </div>
