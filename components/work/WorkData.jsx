@@ -8,9 +8,8 @@ const WORKS = [
     bullets: [
       'Technologies: C++ | Java | Qt | JavaFX | CMake | Conan',
       'Development for a native desktop application software product in C++ and Java.',
-      'Worked closely with company executives to implement requested features and fix existing issues.',
-      'Reimplemented existing still-image analysis software to work with real-time video, improving analysis time by an estimated 90%.',
-      'Used CMake and Conan to manage dependencies for the software.',
+      'Reimplemented existing still-image analysis software to work with real-time video, improving analysis time by ~90%.',
+      'Converted ~40% of Java codebase to optimized C++, resulting in a ~250% performance improvement.',
     ],
   },
   {
@@ -23,7 +22,7 @@ const WORKS = [
       'Technologies: Angular | TypeScript | Java | Spring Boot | REST | Jest | JUnit | Postgres | SQL | CSS',
       'Implemented in-app release notes, saving 100 hrs/yr of customer update meetings.',
       'Converted client-side bulk data export to server-side, cutting export time by 67%.',
-      'Authored app-wide unsaved changes guard, and real-time auditing for user data input, eliminating user error and improving user efficiency by an estimated 30%.',
+      'Authored app-wide unsaved changes guard, and real-time auditing for user data input, eliminating user error and improving user efficiency by an ~30%.',
     ],
   },
   {
@@ -35,7 +34,7 @@ const WORKS = [
     bullets: [
       'Technologies: React | Go | GPT-4 | OpenAI API | GraphQL | Flow | Jest | CSS',
       'Developed and deployed one of the most-requested user features for Khanmigo AI tutor chatbot: stopping generation of GPT-4 AI responses, projected 975k feature uses/yr.',
-      'Collaborated in driving “Khanmigo Insights”, a feature enabling Khanmigo to learn about the user and tailor responses accordingly. Prompt engineered existing AI requests for insight extraction and merging, improving response consistency by approximately 70%.',
+      'Collaborated in driving “Khanmigo Insights”, enabling Khanmigo to learn about the user and tailor responses accordingly. Prompt engineered existing AI requests for insight extraction and merging, improving response consistency by ~70%.',
       'Led architectural planning for Khanmigo anti-cheat, preventing 99% of cheating with Khanmigo.',
       'Worked in a full-stack capacity, utilizing React with Flow for front-end interfaces, GraphQL for data querying, and Go paired with OpenAI’s API for back-end logic and AI interaction.',
     ],
