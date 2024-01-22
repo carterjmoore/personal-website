@@ -2,6 +2,58 @@ import InlineLink from '../../components/ui/InlineLink';
 
 const PROJECTS = [
   {
+    name: 'Orbit',
+    skills: [
+      'Kotlin',
+      'DynamoDB',
+      'Amazon S3',
+      'Amazon EC2',
+      'Ktor',
+      'Jetpack Compose',
+    ],
+    image: {
+      src: '/orbit.png',
+      alt: 'Several screens from Orbit',
+    },
+    content: (
+      <>
+        <p>
+          Orbit is a one-stop-shop for all events happening in the Waterloo
+          region, so that people can host and find tailored events, discover
+          unique spaces beyond their usual spots, and explore the city based on
+          their interest, preference, proximity and accessibility. Once the app
+          is installed, you can start viewing all upcoming events in Waterloo.
+          No sign-ups required.
+        </p>
+        <p>As a guest:</p>
+        <ul>
+          <li>
+            You can filter upcoming events based on event type, date, price and
+            mode (in-person/virtual).
+          </li>
+          <li>
+            You can view details for each upcoming events, including the
+            organizer, price, event name, description, date & time, location and
+            accessibility options (made available by the organizer).
+          </li>
+        </ul>
+        <br />
+        <p>
+          As a registered user, you have access to all features available to
+          guests, and:
+        </p>
+        <ul>
+          <li>You can RSVP for events.</li>
+          <li>You can create your own event on the platform.</li>
+          <li>
+            You can view your upcoming RSVP&apos;d events, events you&apos;ve
+            created, and RSVP&apos;d events that passed.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     name: 'SharePlace',
     github: 'https://github.com/carterjmoore/share-place-backend',
     link: 'https://shareplace.cartermoore.ca/',
