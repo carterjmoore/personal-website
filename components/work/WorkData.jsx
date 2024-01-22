@@ -39,6 +39,18 @@ const WORKS = [
       'Worked in a full-stack capacity, utilizing React with Flow for front-end interfaces, GraphQL for data querying, and Go paired with OpenAI’s API for back-end logic and AI interaction.',
     ],
   },
+  {
+    id: 3,
+    company: 'Khan Academy',
+    href: 'https://www.khanacademy.org/',
+    title: 'Software Engineer Intern',
+    date: 'January - April 2024',
+    bullets: [
+      'Technologies: Python | Go | LangChain | GPT-4 | OpenAI API | GraphQL',
+      'Porting Go-based AI workflow to Python-powered pipeline with LangChain.',
+      'More to come as the internship progresses!',
+    ],
+  },
 ].reverse();
 
 export default WORKS;
