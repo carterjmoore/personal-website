@@ -34,7 +34,7 @@ const WORKS = [
     bullets: [
       'Technologies: React | Go | GPT-4 | OpenAI API | GraphQL | Flow | Jest | CSS',
       'Developed and deployed one of the most-requested user features for Khanmigo AI tutor chatbot: stopping generation of GPT-4 AI responses, projected 975k feature uses/yr.',
-      'Collaborated in driving “Khanmigo Insights”, enabling Khanmigo to learn about the user and tailor responses accordingly. Prompt engineered existing AI requests for insight extraction and merging, improving response consistency by ~70%.',
+      'Collaborated on "Khanmigo Insights" to enable personalized user interactions by letting Khanmigo learn about the user; improved response consistency by ~70% through prompt engineering.',
       'Led architectural planning for Khanmigo anti-cheat, preventing 99% of cheating with Khanmigo.',
       'Worked in a full-stack capacity, utilizing React with Flow for front-end interfaces, GraphQL for data querying, and Go paired with OpenAI’s API for back-end logic and AI interaction.',
     ],
@@ -46,9 +46,22 @@ const WORKS = [
     title: 'Software Engineer Intern',
     date: 'January - April 2024',
     bullets: [
-      'Technologies: Python | Go | LangChain | GPT-4 | OpenAI API | GraphQL',
-      'Porting Go-based AI workflow to Python-powered pipeline with LangChain.',
-      'More to come as the internship progresses!',
+      'Technologies: React | Go | TypeScript | Python | LangChain | GPT-4 | OpenAI API | GraphQL',
+      'Implemented AI-generated message suggestions for chatbot users, yielding ~7.8 million yearly recommendations; collaborated with data scientists to create A/B tests.',
+      'Developed “resume conversation” functionality, saving ~16200 lost conversations annually',
+      'Ported Go-based AI workflow to Python-powered pipeline with LangChain.',
+    ],
+  },
+  {
+    id: 4,
+    company: 'Amazon',
+    href: 'https://www.amazon.com/',
+    title: 'Software Development Engineer Intern',
+    date: 'May - August 2024',
+    bullets: [
+      'Technologies: Java | AWS CDK | Lambda | S3 | SNS | SQS | Kinesis | Cloudwatch',
+      'Developing a data pipeline to support a new outage detection system for identifying payment method disruptions, projected to decrease mean time to detection for "slow-burn outages" by 24%.',
+      'More details to come as the internship progresses, stay tuned!',
     ],
   },
 ].reverse();
