@@ -53,7 +53,7 @@ const About = () => {
                 <InlineLink href="https://www.khanacademy.org/">
                   Khan Academy
                 </InlineLink>
-                , where I got the chance to work on incredible projects such as
+                where I got the chance to work on incredible projects such as
                 building a data pipeline to process tens of thousands of API
                 requests per minute, and spearheading user-facing features for
                 an{' '}
