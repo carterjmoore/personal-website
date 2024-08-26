@@ -60,8 +60,8 @@ const WORKS = [
     date: 'May - August 2024',
     bullets: [
       'Technologies: Java | AWS CDK | Lambda | S3 | SNS | SQS | Kinesis | Cloudwatch',
-      'Developing a data pipeline to support a new outage detection system for identifying payment method disruptions, projected to decrease mean time to detection for "slow-burn outages" by 24%.',
-      'More details to come as the internship progresses, stay tuned!',
+      'Developed a pipeline aggregating data from ~18k API requests/min, supporting a new payment method outage detection system projected to decrease mean time to detection by 24%.',
+      'Analyzed cost of several implementation approaches, opting for a path with 83% less cost.',
     ],
   },
 ].reverse();
