@@ -47,18 +47,21 @@ const About = () => {
                 out of province, in search of new opportunities.
               </p>
               <p>
-                This led to my current internship at{' '}
+                This led me to my recent internships at{' '}
+                <InlineLink href="https://www.amazon.com/">Amazon</InlineLink>{' '}
+                and{' '}
                 <InlineLink href="https://www.khanacademy.org/">
                   Khan Academy
                 </InlineLink>
-                , where I&apos;m working to develop{' '}
-                <InlineLink href="https://www.khanacademy.org/khan-labs">
-                  Khanmigo
-                </InlineLink>
-                , an AI tutor chatbot powered by OpenAI&apos;s{' '}
+                , where I got the chance to work on incredible projects such as
+                building a data pipeline to process tens of thousands of API
+                requests per minute, and spearheading user-facing features for
+                an{' '}
+                <InlineLink href="https://www.khanmigo.ai/">
+                  AI tutor chatbot
+                </InlineLink>{' '}
+                powered by OpenAI&apos;s{' '}
                 <InlineLink href="https://openai.com/gpt-4">GPT-4</InlineLink>.
-                I&apos;m incredibly excited to get the chance to work with such
-                cutting-edge technology as the wave of AI sweeps over our world!
               </p>
             </div>
             <div className={classes.rightCol}>
