@@ -64,6 +64,16 @@ const WORKS = [
       'Analyzed cost of several implementation approaches, opting for a path with 83% less cost.',
     ],
   },
+  {
+    id: 5,
+    company: 'Optiver',
+    href: 'https://optiver.com/',
+    title: 'Software Engineer',
+    date: 'Summer 2025',
+    bullets: [
+      'Beginning full-time employment in Summer 2025 - check back in for more details!',
+    ],
+  },
 ].reverse();
 
 export default WORKS;
