@@ -69,9 +69,9 @@ const WORKS = [
     company: 'Optiver',
     href: 'https://optiver.com/',
     title: 'Software Engineer',
-    date: 'Summer 2025',
+    date: 'August 2025 - Present',
     bullets: [
-      'Beginning full-time employment in Summer 2025 - check back in for more details!',
+      'Beginning full-time employment in August 2025 - check back in for more details!',
     ],
   },
 ].reverse();

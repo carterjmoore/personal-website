@@ -41,20 +41,13 @@ const Home = () => {
               !showParargraph ? classes.hide : ''
             }`}
           >
-            Currently studying Computer Science at the{' '}
+            Computer science grad from the{' '}
             <InlineLink href="https://uwaterloo.ca/">
               University of Waterloo
-            </InlineLink>
-            . I love learning new languages, frameworks, and technologies;
-            lately I&apos;ve been spending my time learning about{' '}
-            <InlineLink href="https://www.khanacademy.org/khan-labs">
-              AI
             </InlineLink>{' '}
-            and{' '}
-            <InlineLink href="https://developers.google.com/machine-learning/crash-course">
-              Machine Learning
-            </InlineLink>
-            .
+            in Canada and current software engineer at{' '}
+            <InlineLink href="https://optiver.com/">Optiver</InlineLink> based
+            in Chicago.
           </p>
         </div>
       </div>
